@@ -9,3 +9,6 @@ def start_client():
         data = client.recv(1024)
         if data:
             print("Notification:", data.decode())
+
+if __name__ == "__main__":
+    start_client()
